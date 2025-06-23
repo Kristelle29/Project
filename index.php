@@ -1,5 +1,5 @@
 <?php 
-$connect = mysqli_connect('localhost', 'root', '', 'empoyees');
+$connect = mysqli_connect('localhost', 'root', '', 'employees');
 $sql = "SELECT dept_no, dept_name FROM departments";
 $result= mysqli_query($connect, $sql);
 ?> 
