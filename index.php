@@ -1,6 +1,7 @@
 <?php 
-include("fonction.php");
-$result=get_Listdepartment();
+$connect = mysqli_connect('localhost', 'root', '', 'empoyees');
+$sql = "SELECT dept_no, dept_name FROM departments";
+$result= mysqli_query($connect, $sql);
 ?> 
 <!DOCTYPE html>
 <html lang="en">
