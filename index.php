@@ -1,7 +1,6 @@
 <?php 
-$connect = mysqli_connect('localhost', 'root', '', 'empoyees');
-$sql = "SELECT dept_no, dept_name FROM departments";
-$result= mysqli_query($connect, $sql);
+include("fonction.php");
+$result=get_Listdepartment();
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +31,7 @@ $result= mysqli_query($connect, $sql);
     <main>
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>
